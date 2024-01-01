@@ -4,7 +4,11 @@
 <h3>
 generated random numbers:
 </h3>
-
+<form action="." method="post">
     {{ form.as_p }}
+  <input type="submit" value="OK" />
+{% csrf_token %}
+</form>
+
 
 {% endblock content %}

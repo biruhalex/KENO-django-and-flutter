@@ -1,0 +1,31 @@
+ <table style="border: 1px solid black;
+  border-collapse: collapse; width: 100%;">
+  <tr style="border: 1px solid black;
+  border-collapse: collapse;">
+    <th style="border: 1px solid black;
+  border-collapse: collapse;">Game ID</th>
+    <th style="border: 1px solid black;
+  border-collapse: collapse;">Players Name</th>
+    <th style="border: 1px solid black;
+  border-collapse: collapse;">Ticket Numbers</th>
+    <th style="border: 1px solid black;
+  border-collapse: collapse;">Stake</th>
+    <th style="border: 1px solid black;
+  border-collapse: collapse;">Win</th>
+  </tr>
+    {% for instance in object_list %}
+  <tr style="border: 1px solid black;
+  border-collapse: collapse;">
+    <td style="border: 1px solid black;
+  border-collapse: collapse;">{{ instance.game_id }}</td>
+    <td style="border: 1px solid black;
+  border-collapse: collapse;">{{ instance.name }}</td>
+    <td style="border: 1px solid black;
+  border-collapse: collapse;">{{ instance.my_list }}</td>
+    <td style="border: 1px solid black;
+  border-collapse: collapse;">{{ instance.stake }}</td>
+    <td style="border: 1px solid black;
+  border-collapse: collapse;">{{ instance.win }}</td>
+  </tr>
+{% endfor %}
+</table>
